@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="../styles.css" rel="stylesheet">
+    <title>Game</title>
+  </head>
+  <body>
+
+    <h1 id = "title">Welcome to the Personal Finance Simulator</h1>
+    <p>Money: $<span id = "money-total">0</span></p>
+    <p id = "date">Date: 01/01/2022</p>
+
+
+    <button id = "nextDayButton">Next Day</button>
+    <br>
+    <a><button id= "save">Save</button></a>
+    <a href="../index.html"><button id = "saveAndExit">Save and Exit</button></a>
+    
+
+    <!-- You can also require other files to run in this process -->
+    <script src="../renderer.js"></script>
+    <script src="../game.js"></script>
+  </body>
+</html>
